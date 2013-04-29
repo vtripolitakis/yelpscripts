@@ -46,7 +46,7 @@ if (parsed_json.count()>1) #just a hack...
 					element_array.push(element[field])
 				end
 			else
-				abort ("EXIT: field "+field+" does not exist")
+				abort("EXIT: field "+field+" does not exist")
 			end
 
 		end
@@ -54,5 +54,5 @@ if (parsed_json.count()>1) #just a hack...
 	
 	end
 else
-	abort ("EXIT: empty json array")
+	abort("EXIT: empty json array")
 end
