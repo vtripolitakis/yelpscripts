@@ -1,3 +1,14 @@
+=begin
+ * Simple Json parser for Yelp (and not only ) datasets for the Kaggle Contest
+ *
+ * Copyright 2013, Evangelos Tripolitakis - http://about.me/vtripolitakis
+ * Released under the MIT Licence
+ * http://opensource.org/licenses/MIT
+ *
+ * Github:  http://github.com/vtripolitakis/yelpscripts
+ * Version: 0.0.1
+=end
+
 require 'json'
 
 if ARGV.empty?
