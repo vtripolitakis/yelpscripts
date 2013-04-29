@@ -1,6 +1,12 @@
 require 'json'
 
+if ARGV.empty?
+	abort ("EXIT: no fields entered")	
+end
+
+
 fields_of_interest = ARGV
+
 
 begin
 
@@ -39,4 +45,3 @@ if (parsed_json.count()>1) #just a hack...
 else
 	abort ("EXIT: empty json array")
 end
-
