@@ -1,0 +1,8 @@
+#!/bin/bash
+
+filename=$1
+shift
+
+#preprocess file
+sed '1i\
+[' $filename |sed 's/$/,/g' |sed '$s/,$/]/' |ruby parse.rb "$@" 
