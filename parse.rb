@@ -42,7 +42,9 @@ if (parsed_json.count()>1) #just a hack...
 			if (element.has_key?(field)) 
 				if (element[field].is_a?(Array))
 					element_array.push(element[field].join(";"))
-				else	
+				elsif (element[field].is_a?(Hash)) #flatten hash table and return values separated by commas (request by Danny Bickson)			
+					element_array.push(element[field].values.join(","))
+				else					
 					element_array.push(element[field])
 				end
 			else
