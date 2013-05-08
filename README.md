@@ -3,8 +3,9 @@ Yelp JSON data for Kaggle Contest Helper Scripts
 
 Usage
 -------
-
+```bash
 ./script jsonfile field1 field2 field3 ... fieldN
+```
 
 Notes
 -------
@@ -17,7 +18,10 @@ E.g.:
 ```
 
 If we run our script on this here's what we get:
-
+```bash
 ./script ../jsonfile a myhash c
+```
 
+```bash
 hello,bar,doe,world
+```
